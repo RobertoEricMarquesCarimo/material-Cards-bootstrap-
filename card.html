@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+<style>
+    .isced-card{
+        margin: 0px 15px 10px 0px;
+        box-shadow: 1px 1px 5px #aaa;
+        height: auto;
+        display: block;
+        padding: 0px;
+        transition: 0.1s;
+        transition-property: box-shadow;
+    }
+    .isced-card:hover {
+        box-shadow: 1px 5px 5px #aaa;
+    }
+    .isced-card .card-cima{
+        height: 150px;
+        border-bottom: 1px solid #ddd;
+        padding: 10px;
+        justify-content: center;
+        padding-top: 110px;
+    }
+    .logo{
+        background-image: url('lines.png');
+    }
+    .isced-card .card-cima h4{
+       position: relative;
+       font-weight: bold;
+    }
+
+    .isced-card .card-cima h4 a{
+        color: #ee3c37;
+    }
+
+    .isced-card .card-baixo{
+        padding: 10px;   
+        min-height: 90px;
+        background-color: #3a3a3a;
+        color: #fff;
+    }
+    .isced-card .card-baixo:hover ~ .card-cima{
+        height: 10px;
+    }
+    .card-more{
+        position: absolute;
+        bottom: 76px;
+        right: 10px;
+        text-align: center;
+        font-weight: bold;
+        background-color: #fff;
+        width: 30px;
+        padding: 5px;
+        box-shadow: 0px 0px 5px #ee3c37;
+        border-radius: 50%;
+        background-color: #ee3c37;
+        color: #fff;
+    }
+    .card-more:hover{
+        background-color: #ee3c37;
+        cursor: pointer;
+        color: #fff;
+    }
+    .card-more a{
+        color: #fff;
+        text-decoration: none;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="row" style="padding-top: 10px;">
+            <div class="col-sm-12 col-md-3 isced-card">
+                <div class="card-cima">
+                    <h4><a href="#">Gestão de Recursos Humanos</a></h4>
+                </div>
+                <div class="card-baixo">Aqui vem o conteudo do tema que sera inserido ao ser criado aqui vem o conteudo do tema que sera inserido ao ser criado</div>
+                
+                <!-- botao para mais informacoes -->
+                <section class="card-more" title="Click para ver mais informações da colecção"><a href="#">>></a></section>
+            </div>
+
+            <div class="col-sm-12 col-md-3 isced-card logo">
+                <div class="card-cima">
+                    <h4><a href="#">Gestão de Recursos Humanos</a></h4>
+                </div>
+                <div class="card-baixo">Aqui vem o conteudo do tema que sera inserido ao ser criado aqui vem o conteudo do tema que sera inserido ao ser criado</div>
+                
+                <!-- botao para mais informacoes -->
+                <section class="card-more" title="Click para ver mais informações da colecção"><a href="#">>></a></section>
+            </div>
+
+            
+        </div>
+    </div>
+</body>
+</html>
